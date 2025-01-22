@@ -19,7 +19,9 @@
     border-radius: 12px;
     padding: 10px 40px;
 }
-
+.nav-btn:hover{
+    background-color: #fbb63f;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -91,9 +93,10 @@ nav ul a {
     outline: none;
     border-radius: 12px;
     padding: 10px 40px;
-
 }
-
+.header-btn:hover{
+    background-color: #383838;
+}
 .head-cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -103,7 +106,8 @@ nav ul a {
 }
 
 .main {
-    background-image: url('assets/bg.png');
+    background: linear-gradient(to bottom,#ffffff00,#fea1014c),url('assets/bg.png');
+
 }
 .cari{
     display: grid;
@@ -183,8 +187,6 @@ nav ul a {
         position: relative;
         top: -680px;
     }
-
-    
 }
 
 @media screen and (max-width: 850px) {
@@ -234,4 +236,65 @@ nav ul a {
     .navbar{
         border:1px solid #FEA301 ;
     }
+}
+.last-btn{
+    background-color: #000000;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 10px 40px;
+    margin-top: 50px;
+}
+.last-btn:hover{
+    background-color: #363636;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+.story{
+    background-color: white;
+    border-radius: 16px;
+    padding-bottom: 30px;
+}
+.story img{
+    width: 100%;
+    border-top-left-radius:16px;
+    border-top-right-radius:16px;
+}
+.story button{
+        padding:10px;
+        font-size: 15px;
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        border: none;
+        text-align: center;
+        margin-left: 30px;
+}
+.story-box{
+    display: grid;
+    grid-template-columns: repeat(3,0.25fr);
+    justify-content: center;
+    gap: 10px;
+}
+.story-1{
+    grid-row: span 2;
+}
+@media screen and (max-width: 832px){
+    .story-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        gap: 10px;
+        margin: 40px;
+    }
+    .story-1{
+        display: none;
+    }
+}
+.footer{
+    background-color: #01ACFD;
+    color: white;
 }
