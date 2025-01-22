@@ -298,3 +298,10 @@ nav ul a {
     background-color: #01ACFD;
     color: white;
 }
+@media screen and (max-width: 832px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
